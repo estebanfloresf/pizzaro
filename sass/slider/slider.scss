@@ -1,0 +1,16 @@
+
+
+.slider{
+    /* Style for "slider con" */
+width: 1920px;
+height: 881px;
+background-color: #c00a27;
+}
+
+@media screen and (max-width: 1366px){
+  .slider{
+    background-color: black;
+    width: 1300px;
+    height: 620px;
+  }
+}
