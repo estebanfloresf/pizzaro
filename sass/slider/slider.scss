@@ -1,16 +1,35 @@
-
-
-.slider{
-    /* Style for "slider con" */
-width: 1920px;
-height: 881px;
-background-color: #c00a27;
+.slider-content {
+  /* Style for "slider con" */
+  position: relative;
+  
+  width: 100%;
+  height: 80%;
+  background-color: #c00a27;
 }
 
-@media screen and (max-width: 1366px){
-  .slider{
-    background-color: black;
-    width: 1300px;
-    height: 620px;
-  }
+.slogan {
+  /* Style for "Slogan" */
+  position: absolute;
+  
+  max-width: 526px;
+  min-width: 426px;
+  max-height:351px;
+  min-height: 251px;
+  // margin: 20% auto 10%;  
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  background-color: rgb(194, 115, 115);
 }
+
+
+
+// .slider-nav {
+//   /* Style for "Slider Nav" */
+//   position: relative;
+//   width: 165px;
+//   height: 10px;
+//   // margin: 839px auto 171px;
+//   background-color: blue
+// }

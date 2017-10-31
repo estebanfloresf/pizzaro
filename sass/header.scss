@@ -1,14 +1,1 @@
 @import "variables";
-.header{
-  /* Style for "Header" */
-  //min-width: 960px;
-
-  height: 180px;
-  background-color: $color1;
-}
-
-@media screen and (min-width: 1920px) {
-  body {
-    width:1920px;
-  }
-}
