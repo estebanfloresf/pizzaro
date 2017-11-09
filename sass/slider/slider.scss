@@ -1,4 +1,5 @@
 @import '../variables';
+
 .slider-content {
   /* Style for "slider con" */
   position: relative;
@@ -24,44 +25,82 @@
 .slider-nav {
   /* Style for "Slider Nav" */
   position: absolute;
-  width: 8%;
+
   height: 10px;
   top: 95%;
   left: 50%;
   transform: translate(-50%, -50%);
   ul {
-    list-style-type: none;
     position: relative;
-    background-color: #c00a27;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: default;
+    width: 100%;
     height: 10px;
-    width: 8.6%;
   }
   ul li {
     position: relative;
-    background-color: #fff;
-    border-radius: 50px;
+    display: block;
     float: left;
-    top: 50%;
-    left: 5%;
-    height: 50%;
-    width: 5%;
-    transform: translate(-50%, -50%);
-    margin-right: 5px;
+    margin: 0 6px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+  }
+  li a {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 50%;
+    /* 	background-color: #fff; */
+    background-color: rgba(255, 255, 255, 0.3);
+    text-indent: -999em;
+    cursor: pointer; /* make the text accessible to screen readers */
+    position: absolute;
+  }
+
+  //  Fill Up
+  li a {
     overflow: hidden;
+    background-color: #fff;
+    transition: background 0.3s;
   }
-  li.active {
-    background-color: #f0002f;
-    width: 19%;
-    margin-left: 10px;
+
+  li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f00;
+
+
+
   }
+
+  li a:hover,
+  li a:focus {
+    background-color: #f45;
+  }
+  li.current {
+    width: 35px;
+    height: 10px;
+    border-radius: 6px;
+    background-color: $color3;
+
+
+  }
+
+  li.current a::after {
+    height: 100%;
+
+
+  }
+
 }
 
-// .slider-dots{
-//   // position: absolute;
-//   background-color: $color2;
-//   border-radius: 50%;
-//   height: 90%;
-//   width: 11%;
-//   float: left;
-//   margin-right: 5px;
-// }
