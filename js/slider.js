@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $('li').click(function () {
 
-        $('li').removeClass('current');
-        $(this).toggleClass('current');
+        $('li').removeClass('active');
+        $(this).toggleClass('active');
     });
 });

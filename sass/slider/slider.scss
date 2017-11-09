@@ -10,97 +10,144 @@
 
 .slogan {
   /* Style for "Slogan" */
-  position: absolute;
-  width: 526px;
+  position:relative;
+  width: 567px;
   min-width: 426px;
-  height: 33%;
+  height: 351px;
   min-height: 251px; // margin: 20% auto 10%;  
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url('../img/slogan.png');
+  background-color: blueviolet;
   background-repeat: no-repeat; // background-size: 100% 100%;
+
+  .title {
+    /* Style for "SUPREME BB" */
+    line-height: -.4%;
+    width: 526px;
+    min-width: 426px;
+    //overflow:hidden;
+    height: 177px;
+    text-shadow: 2px 4px 21px rgba(210, 198, 185, 0.76);
+    color: #ffffff;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: 10vw;
+    font-weight: 700;
+text-align: center;
+    text-transform: uppercase;
+    /* Text style for "SUPREME BB" */
+    letter-spacing: 1.59px;
+    transform: rotate(-6deg);
+  }
 }
 
 .slider-nav {
-  /* Style for "Slider Nav" */
   position: absolute;
-
-  height: 10px;
-  top: 95%;
+  top: 97%;
   left: 50%;
   transform: translate(-50%, -50%);
-  ul {
-    position: relative;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    cursor: default;
-    width: 100%;
-    height: 10px;
-  }
-  ul li {
-    position: relative;
-    display: block;
-    float: left;
-    margin: 0 6px;
-    width: 10px;
-    height: 10px;
-    cursor: pointer;
-  }
-  li a {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    outline: none;
-    border-radius: 50%;
-    /* 	background-color: #fff; */
-    background-color: rgba(255, 255, 255, 0.3);
-    text-indent: -999em;
-    cursor: pointer; /* make the text accessible to screen readers */
-    position: absolute;
-  }
-
-  //  Fill Up
-  li a {
-    overflow: hidden;
-    background-color: #fff;
-    transition: background 0.3s;
-  }
-
-  li a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    height: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f00;
-
-
-
-  }
-
-  li a:hover,
-  li a:focus {
-    background-color: #f45;
-  }
-  li.current {
-    width: 35px;
-    height: 10px;
-    border-radius: 6px;
-    background-color: $color3;
-
-
-  }
-
-  li.current a::after {
-    height: 100%;
-
-
-  }
-
+  align-self: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
+
+li {
+  margin-right: 6px;
+
+  &:before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 300ms ease;
+  }  &.active {
+    &:before {
+      width: 30px;
+      background: $color3;
+    }
+  }
+}
+
+//.slider-nav {
+//  /* Style for "Slider Nav" */
+//  position: absolute;
+//
+//  height: 10px;
+//  top: 95%;
+//  left: 50%;
+//  transform: translate(-50%, -50%);
+//  ul {
+//    position: relative;
+//    display: inline-block;
+//    margin: 0;
+//    padding: 0;
+//    list-style: none;
+//    cursor: default;
+//    width: 100%;
+//    height: 10px;
+//  }
+//  ul li {
+//    position: relative;
+//    display: block;
+//    float: left;
+//    margin: 0 6px;
+//    width: 10px;
+//    height: 10px;
+//    cursor: pointer;
+//  }
+//  li a {
+//    top: 0;
+//    left: 0;
+//    width: 100%;
+//    height: 100%;
+//    outline: none;
+//    border-radius: 50%;
+//    /* 	background-color: #fff; */
+//    background-color: rgba(255, 255, 255, 0.3);
+//    text-indent: -999em;
+//    cursor: pointer; /* make the text accessible to screen readers */
+//    position: absolute;
+//  }
+//
+//  //  Fill Up
+//  li a {
+//    overflow: hidden;
+//    background-color: #fff;
+//    transition: background 0.3s;
+//  }
+//
+//  li a::after {
+//    content: '';
+//    position: absolute;
+//    bottom: 0;
+//    height: 0;
+//    left: 0;
+//    width: 100%;
+//    background-color: #f00;
+//
+//  }
+//
+//  li a:hover,
+//  li a:focus {
+//    background-color: #f45;
+//  }
+//  li.current {
+//    width: 35px;
+//    height: 10px;
+//    border-radius: 6px;
+//    background-color: $color3;
+//
+//  }
+//
+//  li.current a::after {
+//    height: 100%;
+//
+//  }
+//
+//}
 
