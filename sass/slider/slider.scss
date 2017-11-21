@@ -11,7 +11,7 @@
 .slogan {
   /* Style for "Slogan" */
   position: absolute;
-  width: 567px;
+  width: 29%;
   min-width: 426px;
   height: 351px;
   min-height: 251px;
@@ -20,21 +20,6 @@
   transform: translate(-50%, -50%);
   background-color: blueviolet;
   background-repeat: no-repeat;
-}
-
-//Promo line above
-.title {
-  @include slogantext;
-  min-width: 426px;
-  height: 177px;
-  text-shadow: 2px 4px 21px rgba(210, 198, 185, 0.76);
-  color: #ffffff;
-  font-size: 11vw;
-  font-weight: 700;
-  letter-spacing: 1.59px;
-  @media screen and(min-width: 768px) {
-    font-size: 116px;
-  }
 }
 
 .divider {
@@ -53,7 +38,7 @@
     content: '';
     display: table-cell;
     position: relative; // top: 0.5em;
-    width: 27%;
+    width: 23%;
     transform: rotate(-8deg);
   }
   &:before {
@@ -74,11 +59,10 @@
     text-align: center;
     vertical-align: middle;
     /* Style for "LIMITED TI" */
-    width: 36%;
-    height: 61%;
     color: #ffffff;
     @include slogantext;
-    font-size: 30px;
+    font-size: 2.35vw;
+    font-size: 25px;
     font-weight: 400;
     transform: translateX(-50%) translateY(-50%) rotate(-6deg);
     text-transform: uppercase;
@@ -87,51 +71,54 @@
 
 .tag-base {
   /* Style for "tag base" */
-  width: 66px;
-  height: 66px;
+  width: 13%;
+  height: 13%;
   background-color: #ffae00;
   border-radius: 50%;
   position: relative;
-  left: 19%;
-  top: 5%;
+  left: 17%;
+  top: 7%;
+  text-align: center;
   &--text {
     /* Style for "NEW!" */
-    width: 43px;
-    height: 24px;
     color: #ffffff;
     @include slogantext;
-    font-size: 26px;
+    font-size: 2.5vw;
+    font-size: 16px;
     font-weight: 700;
-    
     position: absolute;
-    top: 26%;
-    left: 14%;
+    top: 50%;
+    left: 50%;
+    transform: rotate(-6deg) translate(-50%, -50%);
     text-transform: uppercase;
-    
     /* Text style for "NEW!" */
     letter-spacing: 1.19px;
+
+    
   }
 }
 
-
-
-.promo-title{
+.promo-title {
   /* Style for "SUPREME BB" */
-width: 526px;
-height: 177px;
-text-shadow: 2px 4px 21px rgba(210, 198, 185, 0.76);
-color: #ffffff;
-font-family: "Yanone Kaffeesatz";
-font-size: 140px;
-font-weight: 700;
-line-height: 8.82px;
-text-transform: uppercase;
-/* Text style for "SUPREME BB" */
-letter-spacing: 1.59px;
-background: aqua;
-margin: 10px auto;
-
+  width: 76%;
+  height: 28%;
+  
+  margin: 1px auto;
+  text-align: center;
+  &--text {
+    text-shadow: 2px 4px 21px rgba(210, 198, 185, 0.76);
+    color: #ffffff;
+    
+    font-size: 6vw;
+    font-size: 80px; 
+    font-weight: 700; // line-height: 8.82px;
+    text-transform: uppercase;
+    /* Text style for "SUPREME BB" */
+    // letter-spacing: 1.59px;
+    @include slogantext
+  }
 }
+
 
 
 
@@ -149,7 +136,6 @@ margin: 10px auto;
 
 li {
   margin-right: 6px;
-
   &:before {
     content: '';
     height: 10px;
@@ -167,4 +153,3 @@ li {
     }
   }
 }
-
