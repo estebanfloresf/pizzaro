@@ -2,21 +2,23 @@
   /* Style for "slider con" */
   position: relative;
   width: 100%;
-  height: 80%;
+  height: 70%;
   background-color: #c00a27; }
 
 .slogan {
   /* Style for "Slogan" */
   position: absolute;
+  top: 60%;
+  left: 50%;
   width: 29%;
   min-width: 426px;
   height: 351px;
   min-height: 251px;
-  top: 60%;
-  left: 50%;
   transform: translate(-50%, -50%);
   background-color: blueviolet;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column; }
 
 .divider {
   /* Style for "divider" */
@@ -27,20 +29,18 @@
   top: 17%;
   left: 50%;
   transform: translate(-50%, 0%);
-  display: table;
+  display: flex;
   white-space: nowrap;
-  text-align: center;
-  vertical-align: middle;
   /* Style for "LIMITED TI" */
-  line-height: -71%;
+  line-height: 111px;
   color: #ffffff;
+  font-family: "Yanone Kaffeesatz";
   text-transform: uppercase;
   font-family: "Yanone Kaffeesatz", sans-serif;
   transform: rotate(-6deg);
   -webkit-transform: rotate(-6deg);
   -moz-transform: rotate(-6deg);
-  font-size: 2.35vw;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 400;
   transform: translateX(-50%) translateY(-50%) rotate(-6deg);
   text-transform: uppercase; }
@@ -67,11 +67,12 @@
   border-radius: 53%;
   position: absolute;
   left: 19%;
-  top: 9%;
+  top: 7%;
   text-align: center; }
-  .tag-base--text {
+  .tag-base.text {
     /* Style for "NEW!" */
     color: #ffffff;
+    font-family: "Yanone Kaffeesatz";
     text-transform: uppercase;
     font-family: "Yanone Kaffeesatz", sans-serif;
     transform: rotate(-6deg);
@@ -82,7 +83,7 @@
     font-weight: 700;
     position: absolute;
     top: 45%;
-    left: 50%;
+    left: 28%;
     transform: rotate(-6deg) translate(-50%, -50%);
     text-transform: uppercase;
     /* Text style for "NEW!" */
@@ -91,19 +92,20 @@
 .promo-title {
   /* Style for "SUPREME BB" */
   position: relative;
-  top: -8%;
-  left: -2%;
+  top: -6%;
+  left: -5%;
   width: 76%;
   height: 28%;
   margin: 1px auto;
   text-align: center;
   text-shadow: 2px 4px 21px rgba(210, 198, 185, 0.76);
   color: #ffffff;
-  font-size: 8vw;
-  font-size: 80px;
+  font-size: 5vw;
   font-weight: 700;
   text-transform: uppercase;
   /* Text style for "SUPREME BB" */
+  letter-spacing: 1.59px;
+  font-family: "Yanone Kaffeesatz";
   text-transform: uppercase;
   font-family: "Yanone Kaffeesatz", sans-serif;
   transform: rotate(-6deg);
@@ -112,23 +114,31 @@
 
 .promo-subtitle {
   /* Style for "CHICKEN" */
-  text-transform: uppercase;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  transform: rotate(-6deg);
-  -webkit-transform: rotate(-6deg);
-  -moz-transform: rotate(-6deg);
   position: relative;
+  left: 13%;
   width: 76%;
   height: 28%;
   text-align: center;
   text-shadow: 2px 4px 21px rgba(210, 198, 185, 0.76);
   color: #ffffff;
-  font-family: "Yanone Kaffeesatz";
-  font-size: 6vw;
+  font-size: 4vw;
   font-weight: 300;
   text-transform: uppercase;
   /* Text style for "CHICKEN" */
   letter-spacing: 2.33px; }
+  .promo-subtitle:after {
+    /* Style for "----------" */
+    position: relative;
+    top: 60%;
+    width: 294px;
+    height: 50px;
+    content: "----------";
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20.01px;
+    /* Text style for "----------" */
+    letter-spacing: 4.8px; }
 
 .slider-nav {
   position: absolute;
