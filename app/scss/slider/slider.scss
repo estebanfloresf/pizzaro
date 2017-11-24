@@ -24,102 +24,118 @@
 
 .divider {
   /* Style for "divider" */
-  position: absolute;
+  position: relative;
   width: 89%;
+  max-width: 471px;
   height: 21%; // background-color: #f0f0f0;
-  top: 0%;
+  top: 17%;
   left: 50%;
   transform: translate(-50%, -0%);
   display: table;
   white-space: nowrap;
-  &:before,
-  &:after {
-    border-top: 1px solid white;
-    content: '';
-    display: table-cell;
-    position: relative; // top: 0.5em;
-    width: 23%;
-    transform: rotate(-8deg);
-  }
-  &:before {
-    right: 1.5%;
-    top: 80%;
-    left: 1%;
-  }
-  &:after {
-    left: 1.5%;
-    top: 15%;
-    left: 1%;
-  }
-  &--text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+  text-align: center;
+  vertical-align: middle;
+  /* Style for "LIMITED TI" */
+  line-height: -71%;
+  color: #ffffff;
+  @include slogantext;
+  font-size: 2.35vw;
+  font-size: 25px;
+  font-weight: 400;
+  transform: translateX(-50%) translateY(-50%) rotate(-6deg);
+  text-transform: uppercase;
+  &:after,&:before{
+    background-color: white;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
     vertical-align: middle;
-    /* Style for "LIMITED TI" */
-    color: #ffffff;
-    @include slogantext;
-    font-size: 2.35vw;
-    font-size: 25px;
-    font-weight: 400;
-    transform: translateX(-50%) translateY(-50%) rotate(-6deg);
-    text-transform: uppercase;
+    width: 15%;
   }
+  &:after{
+ 
+ 
+      left: 0.5em;
+      margin-right: -5%;
+ 
+  }
+
+  &:before {
+    right: 0.5em;
+    margin-left:-10%;
+}
+
+
 }
 
 .tag-base {
   /* Style for "tag base" */
-  width: 13%;
-  height: 13%;
+  width: 10%;
+  height: 10%;
   background-color: #ffae00;
-  border-radius: 50%;
-  position: relative;
-  left: 17%;
-  top: 7%;
+  border-radius: 53%;
+  position: absolute;
+  left: 19%;
+  top: 9%;
   text-align: center;
   &--text {
     /* Style for "NEW!" */
     color: #ffffff;
     @include slogantext;
-    font-size: 2.5vw;
-    font-size: 16px;
+    font-size: 1.5vw;
+    font-size: 14px;
     font-weight: 700;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: rotate(-6deg) translate(-50%, -50%);
     text-transform: uppercase;
     /* Text style for "NEW!" */
     letter-spacing: 1.19px;
-
-    
   }
 }
 
 .promo-title {
   /* Style for "SUPREME BB" */
+  position: relative;
+  top: -8%;
+  left: -2%; 
   width: 76%;
   height: 28%;
-  
   margin: 1px auto;
   text-align: center;
-  &--text {
-    text-shadow: 2px 4px 21px rgba(210, 198, 185, 0.76);
-    color: #ffffff;
-    
-    font-size: 6vw;
-    font-size: 80px; 
-    font-weight: 700; // line-height: 8.82px;
-    text-transform: uppercase;
-    /* Text style for "SUPREME BB" */
-    // letter-spacing: 1.59px;
-    @include slogantext
-  }
+  text-shadow: 2px 4px 21px rgba(210, 198, 185, 0.76);
+  color: #ffffff;
+  font-size: 8vw;
+  font-size: 80px;
+  font-weight: 700; // line-height: 8.82px;
+  text-transform: uppercase;
+  /* Text style for "SUPREME BB" */
+  // letter-spacing: 1.59px;
+  @include slogantext
 }
 
 
+.promo-subtitle{
+  /* Style for "CHICKEN" */
+  @include slogantext;
+  position: relative;
+  
+
+  width: 76%;
+  height: 28%;
+  text-align: center;
+text-shadow: 2px 4px 21px rgba(210, 198, 185, 0.76);
+color: #ffffff;
+font-family: "Yanone Kaffeesatz";
+font-size: 6vw;
+font-weight: 300;
+
+text-transform: uppercase;
+/* Text style for "CHICKEN" */
+letter-spacing: 2.33px;
+}
 
 
 .slider-nav {
