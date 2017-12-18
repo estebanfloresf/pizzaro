@@ -1,93 +1,82 @@
 .slider-content {
   /* Style for "slider con" */
-  position: relative;
   width: 100%;
-  height: 70%;
+  height: 100%;
   background-color: #c00a27; }
 
 .slogan {
   /* Style for "Slogan" */
-  position: absolute;
-  top: 60%;
+  position: relative;
+  top: 50%;
   left: 50%;
-  width: 29%;
-  min-width: 426px;
-  height: 351px;
+  width: 44%;
+  height: 40%;
   min-height: 251px;
   transform: translate(-50%, -50%);
   background-color: blueviolet;
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .divider {
   /* Style for "divider" */
-  position: relative;
-  width: 89%;
-  max-width: 471px;
-  height: 21%;
-  top: 17%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  display: flex;
-  white-space: nowrap;
-  /* Style for "LIMITED TI" */
-  line-height: 111px;
-  color: #ffffff;
-  font-family: "Yanone Kaffeesatz";
-  text-transform: uppercase;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  transform: rotate(-6deg);
-  -webkit-transform: rotate(-6deg);
-  -moz-transform: rotate(-6deg);
-  font-size: 30px;
-  font-weight: 400;
-  transform: translateX(-50%) translateY(-50%) rotate(-6deg);
-  text-transform: uppercase; }
-  .divider:after, .divider:before {
-    background-color: white;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 15%; }
-  .divider:after {
-    left: 0.5em;
-    margin-right: -5%; }
-  .divider:before {
-    right: 0.5em;
-    margin-left: -10%; }
-
-.tag-base {
-  /* Style for "tag base" */
-  width: 10%;
-  height: 10%;
-  background-color: #ffae00;
-  border-radius: 53%;
   position: absolute;
-  left: 19%;
-  top: 7%;
-  text-align: center; }
-  .tag-base.text {
-    /* Style for "NEW!" */
-    color: #ffffff;
-    font-family: "Yanone Kaffeesatz";
+  width: 89%;
+  height: 22%;
+  background-color: #c00a27;
+  top: 0;
+  background: linear-gradient(173deg, #c00a27 40%, #c00a27 49.6%, #fff 50%, #c00a27 50.4%, #c00a27 100%); }
+  .divider_text {
+    /* Style for "LIMITED TI" */
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin: auto;
+    width: 45%;
+    height: 62%;
+    font-size: 1.9vw;
+    font-weight: 400;
+    line-height: 1.9;
+    letter-spacing: 0.85px;
     text-transform: uppercase;
     font-family: "Yanone Kaffeesatz", sans-serif;
-    transform: rotate(-6deg);
-    -webkit-transform: rotate(-6deg);
-    -moz-transform: rotate(-6deg);
-    font-size: 1.5vw;
-    font-size: 14px;
-    font-weight: 700;
-    position: absolute;
-    top: 45%;
-    left: 28%;
-    transform: rotate(-6deg) translate(-50%, -50%);
+    color: #ffffff;
+    transform: translateY(-50%) translateX(-50%) rotate(-3deg);
+    -webkit-transform: translateY(-50%) translateX(-50%) rotate(-6deg);
+    -moz-transform: translateY(-50%) translateX(-50%) rotate(-3deg);
+    background: #c00a27; }
+  .divider span {
+    padding: 0 5px; }
+
+.tagbase {
+  z-index: 1;
+  position: relative;
+  height: 86%;
+  width: 14%;
+  background-color: #ffae00;
+  border-radius: 50%;
+  top: 31%;
+  left: 14%;
+  text-align: center; }
+  .tagbase_text {
+    position: relative;
+    width: 65%;
+    height: 36%;
+    top: 38%;
+    left: 48%;
+    font-size: 1.6vw;
+    line-height: 1.6;
+    letter-spacing: 1.19px;
     text-transform: uppercase;
-    /* Text style for "NEW!" */
-    letter-spacing: 1.19px; }
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    color: #ffffff;
+    transform: translateY(50%) translateX(50%) rotate(-3deg);
+    -webkit-transform: translateY(-50%) translateX(-50%) rotate(-6deg);
+    -moz-transform: translateY(-50%) translateX(-50%) rotate(-3deg); }
 
 .promo-title {
   /* Style for "SUPREME BB" */
@@ -104,13 +93,7 @@
   font-weight: 700;
   text-transform: uppercase;
   /* Text style for "SUPREME BB" */
-  letter-spacing: 1.59px;
-  font-family: "Yanone Kaffeesatz";
-  text-transform: uppercase;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  transform: rotate(-6deg);
-  -webkit-transform: rotate(-6deg);
-  -moz-transform: rotate(-6deg); }
+  letter-spacing: 1.59px; }
 
 .promo-subtitle {
   /* Style for "CHICKEN" */
