@@ -1,10 +1,6 @@
 @import "variables";
 @import "./mixins/_grid.scss";
-.container {
-  max-width: 1366px;
-  margin: 0 auto;
-  background: red;
-}
+
 
 *,
 *:after,
