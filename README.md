@@ -1,6 +1,6 @@
 # Pizzaro
 Webdesign from photoshop to html
-![pizarro](../app/img/pizzaro-logo.png "Pizarro")
+![pizarro](https://raw.githubusercontent.com/estebanfloresf/pizzaro/master/app/img/pizzaro-logo.png "Pizarro")
 
 ## How to Run
 
