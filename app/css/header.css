@@ -33,16 +33,15 @@
     flex-wrap: wrap;
     justify-content: space-between; }
     .nav > ul.menu > li a {
-      border: 2px solid;
       list-style: none;
       display: inline-block;
       text-decoration: none;
-      color: #ffffff;
+      /* Text style for "Order Onli" */
+      color: #fff;
       font-family: 'Open Sans', sans-serif;
       font-size: 0.9vw;
       font-weight: 700;
       line-height: 1.5;
-      /* Text style for "Order Onli" */
       letter-spacing: -0.15px; }
       .nav > ul.menu > li a:hover::after {
         border-bottom: 1px solid #ffae00;
@@ -68,16 +67,20 @@
   align-items: flex-end; }
   .contact-menu {
     /* Style for "Call and O" */
-    color: #ffae00;
-    font-family: "Open Sans";
-    font-size: .70vw;
-    font-weight: 400;
-    line-height: 1.3vw;
     /* Text style for "Call and O" */
+    color: #ffae00;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9vw;
+    font-weight: 400;
+    line-height: 0.7vw;
     letter-spacing: -0.36px; }
     .contact-menu > span {
       /* Text style for "London" */
       color: #ffffff;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.9vw;
+      font-weight: 400;
+      line-height: 0.9vw;
       letter-spacing: -0.36px; }
     .contact-menu > span .down-caret {
       width: 0;
@@ -96,12 +99,12 @@
       transition: all .25s ease-out; }
   .contact-number {
     /* Style for "54 548 779" */
-    color: #ffffff;
-    font-family: "Open Sans";
+    /* Text style for "54 548 779" */
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.2vw;
     font-weight: 700;
     line-height: 1.8vw;
-    /* Text style for "54 548 779" */
     letter-spacing: -0.29px; }
 
 .cart-base {
@@ -117,11 +120,12 @@
   .cart-base-info {
     width: 78%;
     height: 32%;
-    color: #ffffff;
-    font-family: "Open Sans";
-    font-size: .8vw;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8vw;
     font-weight: 700;
-    line-height: 1vw; }
+    line-height: 1vw;
+    letter-spacing: -0.36px; }
     .cart-base-info::after {
       content: "";
       display: block;
@@ -161,20 +165,15 @@
     justify-content: space-between;
     flex-wrap: wrap; }
   .food-menu > ul > li {
-    color: #ffffff;
-    font-family: "Open Sans";
-    font-size: .9vw;
-    font-weight: 700;
-    line-height: 2.0vw;
     text-align: center; }
     .food-menu > ul > li > a {
       text-decoration: none;
-      color: #ffffff;
-      font-family: "Open Sans";
-      font-size: .9vw;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.9vw;
       font-weight: 700;
-      line-height: 2.0vw;
-      text-align: center; }
+      line-height: 2vw;
+      letter-spacing: -0.36px; }
       .food-menu > ul > li > a > span {
         float: left;
         width: 30%;

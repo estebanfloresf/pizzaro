@@ -1,6 +1,6 @@
 @import "variables";
 @import "./mixins/_misc.scss";
-$header: 1169;
+
 .header {
     top: 5.4%;
     position: relative;
@@ -22,7 +22,7 @@ $header: 1169;
 .logo {
     /* Style for "Pizzaro lo" */
     width: 17%;
-    height: auto; 
+    height: auto;
     &img {
         @include icons;
     }
@@ -39,7 +39,7 @@ $header: 1169;
         flex-wrap: wrap;
         justify-content: space-between;
         >li a {
-            border: 2px solid;
+            
             list-style: none;
             display: inline-block;
             text-decoration: none;
