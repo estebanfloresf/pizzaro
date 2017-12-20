@@ -154,6 +154,7 @@
     flex-wrap: wrap;
     justify-content: space-between; }
     .nav > ul.menu > li a {
+      border: 2px solid;
       list-style: none;
       display: inline-block;
       text-decoration: none;
@@ -165,7 +166,7 @@
       /* Text style for "Order Onli" */
       letter-spacing: -0.15px; }
       .nav > ul.menu > li a:hover::after {
-        border-bottom: 2px solid #ffae00;
+        border-bottom: 1px solid #ffae00;
         width: 1.8vw;
         margin: 0 auto;
         content: "";
@@ -239,7 +240,7 @@
     height: 32%;
     color: #ffffff;
     font-family: "Open Sans";
-    font-size: .6vw;
+    font-size: .8vw;
     font-weight: 700;
     line-height: 1vw; }
     .cart-base-info::after {
@@ -281,21 +282,28 @@
     justify-content: space-between;
     flex-wrap: wrap; }
   .food-menu > ul > li {
-    /* Style for "Pizza" */
     color: #ffffff;
     font-family: "Open Sans";
     font-size: .9vw;
     font-weight: 700;
     line-height: 2.0vw;
     text-align: center; }
-    .food-menu > ul > li > span {
-      float: left;
-      width: 30%;
-      height: 90%;
-      padding-right: 5px; }
-      .food-menu > ul > li > span > img {
-        width: 100%;
-        height: inherit; }
+    .food-menu > ul > li > a {
+      text-decoration: none;
+      color: #ffffff;
+      font-family: "Open Sans";
+      font-size: .9vw;
+      font-weight: 700;
+      line-height: 2.0vw;
+      text-align: center; }
+      .food-menu > ul > li > a > span {
+        float: left;
+        width: 30%;
+        height: 90%;
+        padding-right: 5px; }
+        .food-menu > ul > li > a > span > img {
+          width: 100%;
+          height: auto; }
 
 .slider-content {
   /* Style for "slider con" */
