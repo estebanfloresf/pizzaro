@@ -49,6 +49,17 @@
         margin: 0 auto;
         content: "";
         display: block; }
+  .nav > ul.food-menu {
+    width: 100%;
+    list-style-type: none;
+    margin: 10% 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .nav > ul.food-menu > li a {
+      list-style: none;
+      display: inline-block; }
 
 .divider-nav {
   /* Style for "divider" */
@@ -108,4 +119,42 @@
   width: 19%;
   height: 100%;
   background-color: #8ca93e;
-  border-radius: 25px; }
+  border-radius: 26px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .cart-base-info {
+    width: 78%;
+    height: 32%;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: .6vw;
+    font-weight: 700;
+    line-height: 1vw; }
+    .cart-base-info::after {
+      content: "";
+      display: block;
+      width: 50%;
+      height: 1px;
+      position: relative;
+      top: 30%;
+      left: 25%;
+      border: 3px solid #fff;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      -webkit-border-to-image: url("../img/bill-paper.png") 30 round;
+      /* Safari 3.1-5 */
+      -o-border-image: url("../img/bill-paper.png") 30 round;
+      /* Opera 11-12.1 */
+      border-image: url("../img/bill-paper.png") 30 round; }
+    .cart-base-info > span {
+      width: 16%;
+      height: auto;
+      display: inline-block;
+      vertical-align: -2;
+      padding-right: 5px; }
+      .cart-base-info > span > img {
+        width: 100%;
+        height: auto; }
