@@ -24,7 +24,6 @@ $header: 1169;
     width: 17%;
     height: auto; 
     &img {
-        
         @include icons;
     }
 }
@@ -44,13 +43,8 @@ $header: 1169;
             list-style: none;
             display: inline-block;
             text-decoration: none;
-            color: #ffffff;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 0.9vw;
-            font-weight: 700;
-            line-height: 1.5;
             /* Text style for "Order Onli" */
-            letter-spacing: -0.15px;
+            @include text(#fff, 0.9vw, 700, 1.5, -0.15px);
             &:hover::after {
                 border-bottom: 1px solid #ffae00;
                 width: 1.8vw;
@@ -80,19 +74,11 @@ $header: 1169;
     align-items: flex-end;
     &-menu {
         /* Style for "Call and O" */
-        // width: 154px;
-        // height: 12px;
-        color: #ffae00;
-        font-family: "Open Sans";
-        font-size: .70vw;
-        font-weight: 400;
-        line-height: 1.3vw;
         /* Text style for "Call and O" */
-        letter-spacing: -0.36px;
+        @include text($color:#ffae00, $line-height: 0.70vw);
         >span {
             /* Text style for "London" */
-            color: #ffffff;
-            letter-spacing: -0.36px;
+            @include text($color: #ffffff, $letter-spacing: -0.36px);
         }
         >span .down-caret {
             width: 0;
@@ -114,15 +100,8 @@ $header: 1169;
     }
     &-number {
         /* Style for "54 548 779" */
-        // width: 100%;
-        // height: auto;
-        color: #ffffff;
-        font-family: "Open Sans";
-        font-size: 1.2vw;
-        font-weight: 700;
-        line-height: 1.8vw;
         /* Text style for "54 548 779" */
-        letter-spacing: -0.29px;
+        @include text($font-size: 1.2vw, $font-weight: 700, $line-height: 1.8vw, $letter-spacing: -0.29px);
     }
 }
 
@@ -139,11 +118,7 @@ $header: 1169;
     &-info {
         width: 78%;
         height: 32%;
-        color: #ffffff;
-        font-family: "Open Sans";
-        font-size: .8vw;
-        font-weight: 700;
-        line-height: 1vw;
+        @include text($font-size: .8vw, $font-weight: 700, $line-height: 1vw);
         &::after {
             content: "";
             display: block;
@@ -188,32 +163,19 @@ $header: 1169;
         flex-wrap: wrap;
     }
     >ul>li {
-      
-        color: #ffffff;
-        font-family: "Open Sans";
-        font-size: .9vw;
-        font-weight: 700;
-        line-height: 2.0vw;
         text-align: center;
-        >a{
+        >a {
             text-decoration: none;
-            color: #ffffff;
-            font-family: "Open Sans";
-            font-size: .9vw;
-            font-weight: 700;
-            line-height: 2.0vw;
-            text-align: center;
-            >span{
+            @include text($font-size: .9vw, $font-weight: 700, $line-height: 2.0vw);
+            >span {
                 float: left;
                 width: 30%;
                 height: 90%;
-                padding-right: 5px;
-                // display: inline-block;
-                >img{
+                padding-right: 5px; // display: inline-block;
+                >img {
                     @include icons;
                 }
             }
         }
-       
     }
 }
