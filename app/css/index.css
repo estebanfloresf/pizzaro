@@ -196,13 +196,30 @@
     line-height: 0.7vw;
     letter-spacing: -0.36px; }
     .contact-menu > span {
-      /* Text style for "London" */
-      color: #ffffff;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 0.9vw;
-      font-weight: 400;
-      line-height: 0.9vw;
-      letter-spacing: -0.36px; }
+      /* Text style for "London" */ }
+      .contact-menu > span > div.dropdown {
+        position: relative;
+        display: inline-block;
+        color: #ffffff;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.9vw;
+        font-weight: 400;
+        line-height: 0.9vw;
+        letter-spacing: -0.36px;
+        cursor: pointer; }
+        .contact-menu > span > div.dropdown > div.dropdown-content {
+          cursor: pointer;
+          display: none;
+          position: absolute;
+          background-color: #bf0c26;
+          min-width: 16%;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          padding: 12px 16px;
+          z-index: 1;
+          line-height: 1.6vh; }
+        .contact-menu > span > div.dropdown.dropdown:hover .dropdown-content {
+          cursor: pointer;
+          display: block; }
     .contact-menu > span .down-caret {
       width: 0;
       height: 0;

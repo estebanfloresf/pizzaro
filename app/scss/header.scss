@@ -1,6 +1,5 @@
 @import "variables";
 @import "./mixins/_misc.scss";
-
 .header {
     top: 5.4%;
     position: relative;
@@ -39,7 +38,6 @@
         flex-wrap: wrap;
         justify-content: space-between;
         >li a {
-            
             list-style: none;
             display: inline-block;
             text-decoration: none;
@@ -75,10 +73,30 @@
     &-menu {
         /* Style for "Call and O" */
         /* Text style for "Call and O" */
-        @include text($color:#ffae00, $line-height: 0.70vw);
+        @include text($color: #ffae00, $line-height: 0.70vw);
         >span {
             /* Text style for "London" */
-            @include text($color: #ffffff, $letter-spacing: -0.36px);
+            >div.dropdown {
+                position: relative;
+                display: inline-block;
+                @include text($color: #ffffff, $letter-spacing: -0.36px);
+                cursor: pointer;
+                >div.dropdown-content{
+                    cursor: pointer;
+                    display: none;
+                    position: absolute;
+                    background-color: #bf0c26;
+                    min-width: 16%;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    padding: 12px 16px;
+                    z-index: 1;
+                    line-height: 1.6vh;
+                }
+                &.dropdown:hover .dropdown-content {
+                    cursor: pointer;
+                    display: block;
+                }
+            }
         }
         >span .down-caret {
             width: 0;
