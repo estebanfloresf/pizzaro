@@ -1,0 +1,153 @@
+.slider-content {
+  /* Style for "slider con" */
+  width: 100%;
+  height: 100%;
+  background-color: #c00a27; }
+
+.slogan {
+  /* Style for "Slogan" */
+  position: relative;
+  top: 35%;
+  left: 50%;
+  width: 44%;
+  height: 40%;
+  min-height: 251px;
+  transform: translate(-50%, -50%); }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.divider {
+  /* Style for "divider" */
+  position: absolute;
+  width: 89%;
+  height: 22%;
+  background-color: #c00a27;
+  top: 0;
+  background: linear-gradient(173deg, #c00a27 40%, #c00a27 49.6%, #fff 50%, #c00a27 50.4%, #c00a27 100%); }
+  .divider_text {
+    /* Style for "LIMITED TI" */
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin: auto;
+    width: 45%;
+    height: 62%;
+    font-size: 1.9vw;
+    font-weight: 400;
+    line-height: 3.5vw;
+    letter-spacing: 0.85px;
+    text-transform: uppercase;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    color: #ffffff;
+    transform: translateY(-50%) translateX(-50%) rotate(-3deg);
+    -webkit-transform: translateY(-50%) translateX(-50%) rotate(-6deg);
+    -moz-transform: translateY(-50%) translateX(-50%) rotate(-3deg);
+    background: #c00a27; }
+  .divider span {
+    padding: auto 5px; }
+
+.tagbase {
+  z-index: 1;
+  position: relative;
+  height: 80%;
+  width: 14%;
+  background-color: #ffae00;
+  border-radius: 50%;
+  top: 31%;
+  left: 14%;
+  text-align: center; }
+  .tagbase_text {
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 48%;
+    left: 48%;
+    font-size: 1.6vw;
+    line-height: 1.6;
+    letter-spacing: 1.19px;
+    text-transform: uppercase;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    color: #ffffff;
+    transform: translateY(50%) translateX(50%) rotate(-3deg);
+    -webkit-transform: translateY(-50%) translateX(-50%) rotate(-6deg);
+    -moz-transform: translateY(-50%) translateX(-50%) rotate(-3deg); }
+
+.promo-title {
+  /* Style for "SUPREME BB" */
+  position: relative;
+  top: -6%;
+  left: -5%;
+  width: 76%;
+  height: 28%;
+  margin: 1px auto;
+  text-align: center;
+  text-shadow: 2px 4px 21px rgba(210, 198, 185, 0.76);
+  color: #ffffff;
+  font-size: 5vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* Text style for "SUPREME BB" */
+  letter-spacing: 1.59px;
+  text-transform: uppercase;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #ffffff;
+  transform: translateY(0%) translateX(0%) rotate(-3deg);
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(-6deg);
+  -moz-transform: translateY(-50%) translateX(-50%) rotate(-3deg); }
+
+.promo-subtitle {
+  /* Style for "CHICKEN" */
+  position: relative;
+  left: 13%;
+  width: 76%;
+  height: 28%;
+  text-align: center;
+  text-shadow: 2px 4px 21px rgba(210, 198, 185, 0.76);
+  color: #ffffff;
+  font-size: 4vw;
+  font-weight: 300;
+  text-transform: uppercase;
+  /* Text style for "CHICKEN" */
+  letter-spacing: 2.33px; }
+  .promo-subtitle:after {
+    /* Style for "----------" */
+    position: relative;
+    top: 60%;
+    width: 294px;
+    height: 50px;
+    content: "----------";
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20.01px;
+    /* Text style for "----------" */
+    letter-spacing: 4.8px; }
+
+.slider-nav {
+  position: absolute;
+  top: 97%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-self: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; }
+  .slider-nav > li {
+    margin-right: 6px; }
+    .slider-nav > li:before {
+      content: '';
+      height: 10px;
+      width: 10px;
+      display: inline-block;
+      background: #fff;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 300ms ease; }
+    .slider-nav > li.active:before {
+      width: 30px;
+      background: #f0002f; }

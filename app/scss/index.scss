@@ -1,0 +1,42 @@
+@import "variables";
+@import "./mixins/_grid.scss";
+
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  @include border-box;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $grid-max-width;
+}
+
+.row {
+  @extend %clearfix;
+}
+
+@for $i from 1 through $grid-columns {
+  .column-#{$i} {
+    padding-left: 15px;
+    float: left;
+    background-color: $color1;
+    width: 100% / $grid-columns * $i;
+  }
+}
+
+@media #{$breakpoint-medium} {
+  @for $i from 1 through $grid-columns {
+    .column-#{$i} {
+      width: 100% / $grid-columns * $i;
+    }
+  }
+}
+
+@import "./header";
+@import './slider/slider.scss';

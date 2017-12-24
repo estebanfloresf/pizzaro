@@ -1,0 +1,8 @@
+@mixin slogantext($translate){
+    text-transform: uppercase;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    color: #ffffff;
+    transform:  translateY($translate) translateX($translate) rotate(-3deg);
+    -webkit-transform:  translateY(-50%) translateX(-50%) rotate(-6deg);
+    -moz-transform:  translateY(-50%) translateX(-50%) rotate(-3deg);
+}
