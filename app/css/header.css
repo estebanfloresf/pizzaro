@@ -27,19 +27,11 @@
   height: auto; }
   .nav > ul.menu {
     list-style-type: none;
-<<<<<<< HEAD
-=======
-    margin: 0;
-    padding: 0;
->>>>>>> 7acf743d7af2a6561bb8e4ff21de6eb6f8d0a1a6
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
     .nav > ul.menu > li a {
-<<<<<<< HEAD
       border: 1px solid #bf0c26;
-=======
->>>>>>> 7acf743d7af2a6561bb8e4ff21de6eb6f8d0a1a6
       list-style: none;
       display: inline-block;
       text-decoration: none;
@@ -192,16 +184,20 @@
     text-align: center; }
     .food-menu > ul > li > a {
       text-decoration: none;
-      color: #fff;
+      color: #ffc0ca;
       font-family: 'Open Sans', sans-serif;
       font-size: 0.9vw;
       font-weight: 700;
-      line-height: 2vw;
+      line-height: 1.2vw;
       letter-spacing: -0.36px; }
+      .food-menu > ul > li > a:active {
+        color: #fff; }
+      .food-menu > ul > li > a:hover {
+        color: #fff; }
       .food-menu > ul > li > a > span {
         float: left;
         width: 30%;
-        height: 90%;
+        height: 100%;
         padding-right: 5px; }
         .food-menu > ul > li > a > span > img {
           width: 100%;

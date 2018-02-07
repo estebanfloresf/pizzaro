@@ -185,12 +185,20 @@
         text-align: center;
         >a {
             text-decoration: none;
-            @include text($font-size: .9vw, $font-weight: 700, $line-height: 2.0vw);
+            @include text($color: #ffc0ca, $font-size: .9vw, $font-weight: 700, $line-height: 1.2vw);
+
+            &:active {
+                color: #fff;
+            }
+            &:hover{
+                color: #fff;
+            }
             >span {
                 float: left;
                 width: 30%;
-                height: 90%;
-                padding-right: 5px; // display: inline-block;
+                height:100%;
+                padding-right: 5px; 
+                
                 >img {
                     @include icons;
                 }
