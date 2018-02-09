@@ -1,0 +1,129 @@
+.banners {
+  margin-top: 23px;
+  display: -webkit-inline-flex;
+  /* Safari */
+  display: inline-flex;
+  flex-direction: row;
+  min-height: 442px;
+  width: 100%; }
+  .banners .banner-item {
+    flex: 1;
+    margin: 0 30px; }
+  .banners .full {
+    background-image: url("../img/pizza2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative; }
+    .banners .full .content {
+      margin-top: 53px;
+      margin-left: 40px; }
+    .banners .full p {
+      /* Style for "GRILLED CH" */
+      display: block;
+      text-shadow: 2px 4px 21px rgba(210, 198, 185, 0.76);
+      color: #ffffff;
+      font-family: "Yanone Kaffeesatz";
+      font-size: 80px;
+      font-weight: 700;
+      line-height: 42px;
+      text-transform: uppercase;
+      /* Text style for "GRILLED CH" */
+      font-weight: 700;
+      letter-spacing: -0.8px;
+      /* Text style for "" */
+      font-size: 60px;
+      font-weight: 700;
+      letter-spacing: -0.6px;
+      /* Text style for "SUMMER PIZ" */
+      font-size: 42px;
+      font-weight: 200;
+      letter-spacing: -0.42px; }
+      .banners .full p span {
+        display: block; }
+    .banners .full .button {
+      /* Style for "rounded ba" */
+      width: 137px;
+      height: 43px;
+      border-radius: 10px;
+      border-color: transparent;
+      background-color: #f0002f;
+      /* Style for "HOT & SPIC" */
+      color: #ffffff;
+      font-family: "Yanone Kaffeesatz";
+      font-size: 2vw;
+      font-weight: 300;
+      line-height: 9.22px;
+      text-transform: uppercase;
+      /* Text style for "HOT & SPIC" */
+      letter-spacing: 0.22px; }
+    .banners .full .disclaimer {
+      /* Style for "*ONLY IN L" */
+      position: absolute;
+      bottom: 10px;
+      color: #ffffff;
+      font-family: "Yanone Kaffeesatz";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 42px;
+      text-transform: uppercase;
+      /* Text style for "*ONLY IN L" */
+      letter-spacing: -0.14px; }
+
+.banner-right {
+  background-image: url("../img/pizza2.jpg");
+  background-size: cover;
+  /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* optional, center the image */ }
+  .banner-right .content {
+    margin-top: 53px;
+    margin-left: 40px; }
+  .banner-right p {
+    /* Style for "GRILLED CH" */
+    display: block;
+    width: 358px;
+    height: 100px;
+    text-shadow: 2px 4px 21px rgba(210, 198, 185, 0.76);
+    color: #ffffff;
+    font-family: "Yanone Kaffeesatz";
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 42px;
+    text-transform: uppercase;
+    /* Text style for "GRILLED CH" */
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    /* Text style for "" */
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+    /* Text style for "SUMMER PIZ" */
+    font-size: 42px;
+    font-weight: 200;
+    letter-spacing: -0.42px; }
+    .banner-right p span {
+      display: block; }
+  .banner-right .button {
+    /* Style for "rounded ba" */
+    width: 137px;
+    height: 43px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: #f0002f;
+    /* Style for "HOT & SPIC" */
+    color: #ffffff;
+    font-family: "Yanone Kaffeesatz";
+    font-size: 1.4vw;
+    font-weight: 300;
+    line-height: 9.22px;
+    text-transform: uppercase;
+    /* Text style for "HOT & SPIC" */
+    letter-spacing: 0.22px; }
+
+@media (max-width: 768px) {
+  .banners {
+    flex-wrap: wrap; }
+  .banner-item:first-child {
+    flex-basis: 100%; } }

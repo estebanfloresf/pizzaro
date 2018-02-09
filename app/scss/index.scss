@@ -25,7 +25,7 @@
   .column-#{$i} {
     padding-left: 15px;
     float: left;
-    background-color: $color1;
+    // background-color: $color1;
     width: 100% / $grid-columns * $i;
   }
 }
@@ -40,3 +40,4 @@
 
 @import "./header";
 @import './slider/slider.scss';
+@import './banners.scss';

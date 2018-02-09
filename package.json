@@ -4,8 +4,7 @@
   "description": "pizzaro",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-  
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "esteban f",
   "license": "MIT",
@@ -15,6 +14,7 @@
     "gulp-sass": "^3.1.0"
   },
   "dependencies": {
+    "eslint": "^4.17.0",
     "gulp-css-scss": "^0.1.0"
   }
 }
