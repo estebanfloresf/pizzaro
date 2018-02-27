@@ -37,7 +37,7 @@
       text-decoration: none;
       /* Text style for "Order Onli" */
       color: #fff;
-      font-family: 'Open Sans', sans-serif;
+      font-family: "Open Sans", sans-serif;
       font-size: 0.9vw;
       font-weight: 700;
       line-height: 1.5;
@@ -68,7 +68,7 @@
     /* Style for "Call and O" */
     /* Text style for "Call and O" */
     color: #ffae00;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 0.9vw;
     font-weight: 400;
     line-height: 0.7vw;
@@ -79,7 +79,7 @@
         position: relative;
         display: inline-block;
         color: #ffffff;
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-size: 0.9vw;
         font-weight: 400;
         line-height: 0.9vw;
@@ -117,7 +117,7 @@
     /* Style for "54 548 779" */
     /* Text style for "54 548 779" */
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.2vw;
     font-weight: 700;
     line-height: 1.8vw;
@@ -137,7 +137,7 @@
     width: 78%;
     height: 32%;
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 0.8vw;
     font-weight: 700;
     line-height: 1vw;
@@ -185,7 +185,7 @@
     .food-menu > ul > li > a {
       text-decoration: none;
       color: #ffc0ca;
-      font-family: 'Open Sans', sans-serif;
+      font-family: "Open Sans", sans-serif;
       font-size: 0.9vw;
       font-weight: 700;
       line-height: 1.2vw;

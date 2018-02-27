@@ -146,7 +146,7 @@
       text-decoration: none;
       /* Text style for "Order Onli" */
       color: #fff;
-      font-family: 'Open Sans', sans-serif;
+      font-family: "Open Sans", sans-serif;
       font-size: 0.9vw;
       font-weight: 700;
       line-height: 1.5;
@@ -177,7 +177,7 @@
     /* Style for "Call and O" */
     /* Text style for "Call and O" */
     color: #ffae00;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 0.9vw;
     font-weight: 400;
     line-height: 0.7vw;
@@ -188,7 +188,7 @@
         position: relative;
         display: inline-block;
         color: #ffffff;
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-size: 0.9vw;
         font-weight: 400;
         line-height: 0.9vw;
@@ -226,7 +226,7 @@
     /* Style for "54 548 779" */
     /* Text style for "54 548 779" */
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.2vw;
     font-weight: 700;
     line-height: 1.8vw;
@@ -246,7 +246,7 @@
     width: 78%;
     height: 32%;
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 0.8vw;
     font-weight: 700;
     line-height: 1vw;
@@ -294,7 +294,7 @@
     .food-menu > ul > li > a {
       text-decoration: none;
       color: #ffc0ca;
-      font-family: 'Open Sans', sans-serif;
+      font-family: "Open Sans", sans-serif;
       font-size: 0.9vw;
       font-weight: 700;
       line-height: 1.2vw;
@@ -477,7 +477,6 @@ img {
   .banners .banner-item {
     flex: 1;
     height: 442px;
-    width: 9%;
     background-color: aqua; }
   .banners .full {
     background-image: url("../img/pizza2.jpg");
@@ -492,25 +491,32 @@ img {
       /* Style for "GRILLED CH" */
       display: block;
       text-shadow: 2px 4px 21px rgba(210, 198, 185, 0.76);
-      color: #ffffff;
-      font-family: "Yanone Kaffeesatz";
-      font-size: 80px;
-      font-weight: 700;
-      line-height: 42px;
       text-transform: uppercase;
-      /* Text style for "GRILLED CH" */
-      font-weight: 700;
-      letter-spacing: -0.8px;
       /* Text style for "" */
+      color: #fff;
+      font-family: "Yanone Kaffeesatz", sans-serif;
       font-size: 60px;
       font-weight: 700;
-      letter-spacing: -0.6px;
-      /* Text style for "SUMMER PIZ" */
-      font-size: 42px;
-      font-weight: 200;
-      letter-spacing: -0.42px; }
+      line-height: 0.9vw;
+      letter-spacing: -0.6px; }
       .banners .full p span {
-        display: block; }
+        display: block;
+        /* Text style for "GRILLED CH" */ }
+        .banners .full p span strong {
+          color: #fff;
+          font-family: "Yanone Kaffeesatz", sans-serif;
+          font-size: 60px;
+          font-weight: 700;
+          line-height: 42px;
+          letter-spacing: -0.8px; }
+        .banners .full p span small {
+          /* Text style for "SUMMER PIZ" */
+          color: #fff;
+          font-family: "Open Sans", sans-serif;
+          font-size: 42px;
+          font-weight: 200;
+          line-height: 42px;
+          letter-spacing: -0.42px; }
     .banners .full .button {
       /* Style for "rounded ba" */
       width: 137px;

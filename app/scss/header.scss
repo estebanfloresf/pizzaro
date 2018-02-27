@@ -43,7 +43,7 @@
             display: inline-block;
             text-decoration: none;
             /* Text style for "Order Onli" */
-            @include text(#fff, 0.9vw, 700, 1.5, -0.15px);
+            @include text(#fff, 'Open Sans',0.9vw, 700, 1.5, -0.15px);
             &:hover::after {
                 border-bottom: 1px solid #ffae00;
                 width: 1.8vw;

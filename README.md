@@ -1,6 +1,12 @@
-# Pizzaro
-Webdesign from photoshop to html
+PSD to HTML - Pizzaro
+====
+
+<br>
+
 ![pizarro](https://raw.githubusercontent.com/estebanfloresf/pizzaro/master/app/img/pizzaro-logo.png)
+
+<br>Webdesign from photoshop to html
+
 
 ## How to Run
 

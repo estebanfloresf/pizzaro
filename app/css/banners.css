@@ -9,7 +9,6 @@
   .banners .banner-item {
     flex: 1;
     height: 442px;
-    width: 9%;
     background-color: aqua; }
   .banners .full {
     background-image: url("../img/pizza2.jpg");
@@ -24,25 +23,32 @@
       /* Style for "GRILLED CH" */
       display: block;
       text-shadow: 2px 4px 21px rgba(210, 198, 185, 0.76);
-      color: #ffffff;
-      font-family: "Yanone Kaffeesatz";
-      font-size: 80px;
-      font-weight: 700;
-      line-height: 42px;
       text-transform: uppercase;
-      /* Text style for "GRILLED CH" */
-      font-weight: 700;
-      letter-spacing: -0.8px;
       /* Text style for "" */
+      color: #fff;
+      font-family: "Yanone Kaffeesatz", sans-serif;
       font-size: 60px;
       font-weight: 700;
-      letter-spacing: -0.6px;
-      /* Text style for "SUMMER PIZ" */
-      font-size: 42px;
-      font-weight: 200;
-      letter-spacing: -0.42px; }
+      line-height: 0.9vw;
+      letter-spacing: -0.6px; }
       .banners .full p span {
-        display: block; }
+        display: block;
+        /* Text style for "GRILLED CH" */ }
+        .banners .full p span strong {
+          color: #fff;
+          font-family: "Yanone Kaffeesatz", sans-serif;
+          font-size: 60px;
+          font-weight: 700;
+          line-height: 42px;
+          letter-spacing: -0.8px; }
+        .banners .full p span small {
+          /* Text style for "SUMMER PIZ" */
+          color: #fff;
+          font-family: "Open Sans", sans-serif;
+          font-size: 42px;
+          font-weight: 200;
+          line-height: 42px;
+          letter-spacing: -0.42px; }
     .banners .full .button {
       /* Style for "rounded ba" */
       width: 137px;
