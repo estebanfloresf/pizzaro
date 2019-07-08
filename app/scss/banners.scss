@@ -1,27 +1,42 @@
 @import "./mixins/_misc.scss";
+@import "./mixins/_flexbox.scss";
+
 .banners {
-    margin-top: 23px;
-    display: -webkit-inline-flex;
-    /* Safari */
-    display: inline-flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-    .banner-item {
-        flex: 1;
-        height: 442px; // width: 9%;
-        background-color: aqua;
+    margin: 3% 0;
+    @include flexbox();
+    @include flex-flow('row wrap');
+    height: 442px;
+
+    [class*='banner-'] {
+        flex: 0 0 92%;
+        margin-left: 0 4%;
+        background-color: #fef;
     }
+
+    .banner-item-sm {
+        @include flex(0 0 20%);
+    }
+
+    .banner-item-md {
+        @include flex(0 0 44%);
+    }
+
+    .banner-item-lg {
+        @include flex(0 0 92%);
+    }
+
     .full {
         background-image: url('../img/pizza2.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
         position: relative;
+
         .content {
             margin-top: 53px;
             margin-left: 40px;
         }
+
         p {
             /* Style for "GRILLED CH" */
             display: block;
@@ -29,24 +44,26 @@
             text-transform: uppercase;
             /* Text style for "" */
             @include text($font-family: "Yanone Kaffeesatz", $font-size: 60px, $font-weight: 700, $letter-spacing: -0.6px);
+
             span {
                 display: block;
+
                 /* Text style for "GRILLED CH" */
                 strong {
                     @include text($font-family: "Yanone Kaffeesatz", $font-size: 60px, $font-weight: 700, $line-height: 42px, $letter-spacing: -0.8px);
                 }
+
                 small {
                     /* Text style for "SUMMER PIZ" */
-                    @include text(
-                        $font-size: 42px,
+                    @include text($font-size: 42px,
                         $font-weight: 200,
                         $line-height: 42px,
-                        $letter-spacing: -0.42px
-                    );
-                    
+                        $letter-spacing: -0.42px);
+
                 }
             }
         }
+
         .button {
             /* Style for "rounded ba" */
             width: 137px;
@@ -64,6 +81,7 @@
             /* Text style for "HOT & SPIC" */
             letter-spacing: 0.22px;
         }
+
         .disclaimer {
             /* Style for "*ONLY IN L" */
             // width: 64px;
@@ -83,10 +101,13 @@
 }
 
 $breakpoint-tablet: 768px;
+
 @media (max-width: $breakpoint-tablet) {
     .banners {
         flex-wrap: wrap;
+        margin: 4% 2%;
     }
+
     .banner-item:first-child {
         flex-basis: 100%;
     }

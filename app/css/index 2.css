@@ -467,7 +467,7 @@ img {
       background: #f0002f; }
 
 .banners {
-  margin: 3% 0;
+  margin: 8% 0;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -477,29 +477,16 @@ img {
   -moz-flex-flow: "row wrap";
   -ms-flex-flow: "row wrap";
   flex-flow: "row wrap";
+  flex: 0 1 auto;
   height: 442px; }
-  .banners [class*='banner-'] {
-    flex: 0 0 92%;
-    margin-left: 0 4%;
-    background-color: #fef; }
-  .banners .banner-item-sm {
-    -webkit-box-flex: 0 0 20%;
-    -moz-box-flex: 0 0 20%;
-    -webkit-flex: 0 0 20%;
-    -ms-flex: 0 0 20%;
-    flex: 0 0 20%; }
-  .banners .banner-item-md {
+  .banners .banner-item {
     -webkit-box-flex: 0 0 44%;
     -moz-box-flex: 0 0 44%;
     -webkit-flex: 0 0 44%;
     -ms-flex: 0 0 44%;
-    flex: 0 0 44%; }
-  .banners .banner-item-lg {
-    -webkit-box-flex: 0 0 92%;
-    -moz-box-flex: 0 0 92%;
-    -webkit-flex: 0 0 92%;
-    -ms-flex: 0 0 92%;
-    flex: 0 0 92%; }
+    flex: 0 0 44%;
+    background-color: aqua;
+    margin-left: 4%; }
   .banners .full {
     background-image: url("../img/pizza2.jpg");
     background-size: cover;

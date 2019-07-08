@@ -1,5 +1,6 @@
 @import "variables";
 @import "./mixins/_misc.scss";
+
 .header {
     top: 5.4%;
     position: relative;
@@ -22,6 +23,7 @@
     /* Style for "Pizzaro lo" */
     width: 17%;
     height: auto;
+
     &img {
         @include icons;
     }
@@ -30,20 +32,23 @@
 .nav {
     width: 35%;
     height: auto;
+
     >ul.menu {
         list-style-type: none;
-        
-        
+
+
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
         >li a {
-            border: 1px solid #bf0c26 ;
+            border: 1px solid #bf0c26;
             list-style: none;
             display: inline-block;
             text-decoration: none;
             /* Text style for "Order Onli" */
-            @include text(#fff, 'Open Sans',0.9vw, 700, 1.5, -0.15px);
+            @include text(#fff, 'Open Sans', 0.9vw, 700, 1.5, -0.15px);
+
             &:hover::after {
                 border-bottom: 1px solid #ffae00;
                 width: 1.8vw;
@@ -71,34 +76,40 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
     &-menu {
         /* Style for "Call and O" */
         /* Text style for "Call and O" */
         @include text($color: #ffae00, $line-height: 0.70vw);
+
         >span {
+
             /* Text style for "London" */
             >div.dropdown {
                 position: relative;
                 display: inline-block;
                 @include text($color: #ffffff, $letter-spacing: -0.36px);
                 cursor: pointer;
-                >div.dropdown-content{
+
+                >div.dropdown-content {
                     cursor: pointer;
                     display: none;
                     position: absolute;
                     background-color: #bf0c26;
                     min-width: 16%;
-                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
                     padding: 12px 16px;
                     z-index: 1;
                     line-height: 1.6vh;
                 }
+
                 &.dropdown:hover .dropdown-content {
                     cursor: pointer;
                     display: block;
                 }
             }
         }
+
         >span .down-caret {
             width: 0;
             height: 0;
@@ -112,11 +123,13 @@
             transform: rotate(0deg);
             transition: all .25s ease-in;
         }
+
         .open-caret {
             transform: rotate(180deg);
             transition: all .25s ease-out;
         }
     }
+
     &-number {
         /* Style for "54 548 779" */
         /* Text style for "54 548 779" */
@@ -134,10 +147,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
     &-info {
         width: 78%;
         height: 32%;
         @include text($font-size: .8vw, $font-weight: 700, $line-height: 1vw);
+
         &::after {
             content: "";
             display: block;
@@ -156,12 +171,14 @@
             /* Opera 11-12.1 */
             border-image: url('../img/bill-paper.png') 30 round;
         }
+
         >span {
             width: 16%;
             height: auto;
             display: inline-block;
             vertical-align: ceil($number: -2);
             padding-right: 5px;
+
             >img {
                 @include icons;
             }
@@ -173,6 +190,7 @@
     height: 24%;
     position: relative;
     top: 25%;
+
     >ul {
         width: 100%;
         list-style-type: none;
@@ -181,8 +199,10 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
+
     >ul>li {
         text-align: center;
+
         >a {
             text-decoration: none;
             @include text($color: #ffc0ca, $font-size: .9vw, $font-weight: 700, $line-height: 1.2vw);
@@ -190,15 +210,17 @@
             &:active {
                 color: #fff;
             }
-            &:hover{
+
+            &:hover {
                 color: #fff;
             }
+
             >span {
                 float: left;
                 width: 30%;
-                height:100%;
-                padding-right: 5px; 
-                
+                height: 100%;
+                padding-right: 5px;
+
                 >img {
                     @include icons;
                 }
