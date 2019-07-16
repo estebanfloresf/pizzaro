@@ -1,4 +1,4 @@
-@import "variables";
+@import "./utilities/_variables.scss";
 @import "./mixins/_misc.scss";
 
 .header {
@@ -19,7 +19,7 @@
     justify-content: space-between;
 }
 
-.logo {
+.logo2 {
     /* Style for "Pizzaro lo" */
     width: 17%;
     height: auto;

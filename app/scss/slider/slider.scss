@@ -1,5 +1,6 @@
-@import '../variables';
+@import "../utilities/_variables.scss";
 @import "../mixins/_slogantext.scss";
+
 .slider-content {
   /* Style for "slider con" */
   // position: relative;
@@ -18,15 +19,17 @@
   min-height: 251px;
   transform: translate(-50%, -50%);
   // background-color: blueviolet;
- 
-  
+
+
 }
-img{
-    
+
+img {
+
   width: 100%;
   height: auto;
 
 }
+
 .divider {
   /* Style for "divider" */
   position: absolute;
@@ -35,6 +38,7 @@ img{
   background-color: #c00a27;
   top: 0;
   background: linear-gradient(173deg, #c00a27 40%, #c00a27 49.6%, #fff 50%, #c00a27 50.4%, #c00a27 100%);
+
   &_text {
     /* Style for "LIMITED TI" */
     position: absolute;
@@ -52,6 +56,7 @@ img{
     @include slogantext(-50%);
     background: #c00a27;
   }
+
   span {
     padding: auto 5px;
   }
@@ -67,6 +72,7 @@ img{
   top: 31%;
   left: 14%;
   text-align: center;
+
   &_text {
     position: relative;
     width: auto;
@@ -95,7 +101,7 @@ img{
   font-weight: 700; // line-height: 8.82px;
   text-transform: uppercase;
   /* Text style for "SUPREME BB" */
-  letter-spacing: 1.59px; 
+  letter-spacing: 1.59px;
   @include slogantext(0%);
 }
 
@@ -113,6 +119,7 @@ img{
   text-transform: uppercase;
   /* Text style for "CHICKEN" */
   letter-spacing: 2.33px;
+
   &:after {
     /* Style for "----------" */
     position: relative;
@@ -139,8 +146,10 @@ img{
   margin: 0;
   padding: 0;
   display: flex;
-  > li {
+
+  >li {
     margin-right: 6px;
+
     &:before {
       content: '';
       height: 10px;
@@ -151,6 +160,7 @@ img{
       cursor: pointer;
       transition: all 300ms ease;
     }
+
     &.active {
       &:before {
         width: 30px;
@@ -159,4 +169,3 @@ img{
     }
   }
 }
-
